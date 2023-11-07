@@ -3,7 +3,7 @@ package Trimestre1.practicas;
 import java.util.Scanner;
 import java.util.Random;
 public class Prac3 {
-    public static int TamañoMapa=8;
+    public static int TamañoMapa =8;
     public static int[][] tablero=  new int[TamañoMapa][TamañoMapa];
     public static int Barcos=6;
     public static int BarcosUndidos=0;
