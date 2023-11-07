@@ -37,7 +37,25 @@ public class Prac3 {
          }else {
              System.out.println("Error: Disparo inválido. Introduce una fila y columna válidas.");
          }
-
+        if (BarcosUndidos==Barcos){
+            System.out.println("Felicidades has logrado acabar con todos los barcos");
+        }
+        if (DisparosUsados==Disparos){
+            System.out.println("No te quedan disparos, has perdido");
+            System.out.println("Aqui estaban los barcos");
+            for (int i = 0; i < tablero.length; i++) {
+                for (int j = 0; j < tablero[i].length; j++) {
+                    if (tablero[i][j] == 0 || tablero[i][j] == 2) {
+                        System.out.print("X ");
+                    } else if (tablero[i][j] == 1) {
+                        System.out.print("0 ");
+                    } else if (tablero[i][j] == 3) {
+                        System.out.print("O ");
+                    }
+                }
+                System.out.println();
+            }
+        }
      }
     }
     static void IniciarMapa(){
