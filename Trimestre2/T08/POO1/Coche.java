@@ -36,4 +36,16 @@ public class Coche {
     public int getNumeroBastidor() {
         return NumeroBastidor;
     }
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", frase='" + frase + '\'' +
+                ", NumeroBastidor=" + NumeroBastidor +
+                ", velocidad=" + velocidad +
+                "} \n";
+    }
 }

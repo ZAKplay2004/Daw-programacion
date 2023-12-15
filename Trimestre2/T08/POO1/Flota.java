@@ -22,14 +22,10 @@ public class Flota {
 
         }
     }
-   public void mostrarFlota(){
-        if (listadecoches.isEmpty()){
-            System.out.println("La flota esta vacia.");
-        }else {
-            System.out.println("Lista de los coches de la flota:");
-
-        }for (Coche coche:listadecoches){
-           System.out.println(listadecoches);
-       }
-   }
+    @Override
+    public String toString() {
+        return "Flota{" +
+                "listadecoches="+ "\n" + listadecoches +
+                '}';
+    }
 }
