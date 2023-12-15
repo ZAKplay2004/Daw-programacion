@@ -18,8 +18,10 @@ public class Flota {
                 iterator.remove();
                 System.out.println("Coche con número de bastidor " + numeroBastidor + " eliminado de la flota.");
                 return;
+            }else{
+                System.out.println("No se encuentra el coche en la flota");
+                return;
             }
-
         }
     }
     @Override
