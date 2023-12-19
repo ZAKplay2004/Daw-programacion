@@ -2,32 +2,48 @@ package Trimestre2.T08.POO1;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
+
 public class Flota {
     private List<Coche> listadecoches;
-    public Flota(){
-        listadecoches=new ArrayList<>();
+
+    public Flota() {
+        listadecoches = new ArrayList<>();
     }
-    public void agregarCoche (Coche coche){
+
+    public void agregarCoche(Coche coche) {
         listadecoches.add(coche);
     }
-    public void eliminarCoche (int numeroBastidor){
+
+    public void eliminarCoche(int numeroBastidor) {
         Iterator<Coche> iterator = listadecoches.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             Coche coche = iterator.next();
-            if (coche.getNumeroBastidor()== numeroBastidor){
+            if (coche.getNumeroBastidor() == numeroBastidor) {
                 iterator.remove();
                 System.out.println("Coche con número de bastidor " + numeroBastidor + " eliminado de la flota.");
                 return;
-            }else{
+            } else {
                 System.out.println("No se encuentra el coche en la flota");
                 return;
             }
         }
     }
-    @Override
-    public String toString() {
-        return "Flota{" +
-                "listadecoches="+ "\n" + listadecoches +
-                '}';
+
+    public Coche comprobarCoche(int numeroBastidor) {
+        for (Coche coche : listadecoches) {
+            if (coche.getNumeroBastidor() == numeroBastidor) {
+                return coche;
+            }
+        }
+        return null;
     }
-}
+
+        @Override
+        public String toString () {
+            return "Flota{" +
+                    "listadecoches=" + "\n" + listadecoches +
+                    '}';
+        }
+    }
+

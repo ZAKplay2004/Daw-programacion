@@ -1,7 +1,7 @@
 package Trimestre2.T08.POO1;
 
 public class Coche {
-    private String marca, modelo, color, frase;
+    private String marca, modelo, color;
     private int NumeroBastidor, velocidad = 0;
 
     public Coche(String marca, String modelo, String color, int NumeroBastidor) {
@@ -43,7 +43,6 @@ public class Coche {
                 "marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", color='" + color + '\'' +
-                ", frase='" + frase + '\'' +
                 ", NumeroBastidor=" + NumeroBastidor +
                 ", velocidad=" + velocidad +
                 "} \n";
