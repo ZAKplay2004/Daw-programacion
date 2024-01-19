@@ -1,4 +1,4 @@
-package Trimestre2.T08.POO1;
+package Trimestre2.T08.POO1.actividades;
 
 public class Coche {
     private String marca, modelo, color;

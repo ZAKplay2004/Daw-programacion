@@ -1,5 +1,4 @@
-package Trimestre2.T08.POO1;
-import java.util.Scanner;
+package Trimestre2.T08.POO1.actividades;
 
 public class Act8 {
     public static void main(String[] args) {

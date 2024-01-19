@@ -1,6 +1,4 @@
-package Trimestre2.T08.POO1;
-
-import java.lang.reflect.Constructor;
+package Trimestre2.T08.POO1.actividades;
 
 public class Conductor{
     String nombre;
@@ -22,13 +20,12 @@ public class Conductor{
         this.coche= coche;
     }
 
-    public void asignarCoche(int numeroBastidor, Flota flota){
+    public void asignarCoche(int numeroBastidor, Flota flota) {
         Coche coche = flota.comprobarCoche(numeroBastidor);
-        if (coche != null){
-            this.coche=coche;
+        if (coche != null) {
+            this.coche = coche;
         }
     }
-
     @Override
     public String toString() {
         return "Conductor{" +

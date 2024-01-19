@@ -1,4 +1,4 @@
-package Trimestre2.T08.POO1;
+package Trimestre2.T08.POO1.actividades;
 
 public class Act3 {
     public static void main(String[] args) {

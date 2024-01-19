@@ -1,10 +1,7 @@
-package Trimestre2.T08.POO1;
+package Trimestre2.T08.POO1.actividades;
 
-import java.io.Reader;
-import java.util.Scanner;
-public class Act7 {
+public class Act5 {
     public static void main(String[] args) {
-
         Flota flota = new Flota();
 
         Coche coche1 = new Coche("Kia", "Niro", "gris", 123456);
@@ -18,10 +15,7 @@ public class Act7 {
         System.out.println("Antes de eliminar:");
         System.out.println(flota);
 
-        Scanner reader = new Scanner(System.in);
-        System.out.println("Dime elnumero de bastidor del coche que quieres eliminar");
-        int numerobastidor= reader.nextInt();
-        flota.eliminarCoche(numerobastidor);
+       flota.eliminarCoche(789012);
 
         System.out.println("\nDespués de eliminar:");
         System.out.println(flota);

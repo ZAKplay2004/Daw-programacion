@@ -1,8 +1,7 @@
-package Trimestre2.T08.POO1;
+package Trimestre2.T08.POO1.actividades;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Optional;
 
 public class Flota {
     private List<Coche> listadecoches;
