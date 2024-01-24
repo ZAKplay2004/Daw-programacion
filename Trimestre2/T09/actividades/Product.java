@@ -15,15 +15,6 @@ public class Product {
     public void setId(int id) {
         this.id = id;
     }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
 }
 
 
